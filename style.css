@@ -356,6 +356,8 @@ color: #C73C0E;
 .container{
   flex-wrap: wrap;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 /* Product Grid */
 .product-grid {
@@ -454,7 +456,8 @@ padding: 5px;
   background-color: transparent;
 }
 .popout-card{
-  width: 70%;
+  width: 80%;
+  max-width: 400px;
   background-color: #fff;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -465,14 +468,27 @@ padding: 5px;
   padding: 25px ;
   margin: auto;
   position: absolute;
-  left: 5%;
-  /* top: 25%; */
-  right: 5%;
+  left: 20px;
+  top: 15%;
+z-index: 1;
 }
 .orderSummary{
-  width: 350px;
+  width: 100%;
   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
   
   
+  }
+  .cart {
+    flex: 0 0 300px;
+    background: #fff;
+   height: fit-content;
+    border-radius: 8px;
+    padding-top: 5px;
+padding-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+  }
+  .hide{
+    display: none;
   }
   }
