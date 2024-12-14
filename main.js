@@ -55,6 +55,7 @@ function updateCart() {
 }
 orderConfirmedBtn.addEventListener('click', () => {
   container.classList.toggle('blur')
+  container.classList.toggle('hide')
   let total = 0
   popoutCard.style.display = 'flex'
   //Populate the popup form
@@ -70,7 +71,7 @@ lastCart.innerHTML = `
           <div > 
           <span> ${item.name} </span>
           <div>
-            <span>${item.quantity} </span>
+            <span>x${item.quantity} </span>
               <span>  @$${item.price} </span> 
           </div>
           
